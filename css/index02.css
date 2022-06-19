@@ -1,0 +1,172 @@
+#BildUebergang {
+    
+	position: relative;
+	background-image: url('images/images_startseite/Bild 2.jpg');
+	align-items: center;
+	background-size: cover;
+	display: flex;
+	height: 50vh;
+	overflow: hidden;
+	top: 30px;
+    align-items: center;
+
+}
+
+.slide{
+    margin-top: 70px;
+  }
+
+#BildUebergang img {
+    z-index: 2;
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	height: auto;
+	transform: scale(1.4) rotate(12deg);
+	opacity: 0;
+	backface-visibility: hidden;
+	animation: BildUebergang 24s infinite;
+	background: rgb(255, 255, 255);
+	object-fit: scale-down;
+	animation-delay: 5s;
+    overflow: hidden;
+}
+
+#BildUebergang img:nth-child(3) {
+	animation-delay: 8s;
+}
+
+#BildUebergang img:nth-child(2) {
+	animation-delay: 12s;
+}
+
+#BildUebergang img:nth-child(1) {
+	animation-delay: 10s;
+}
+
+@-moz-keyframes BildUebergang {
+	25% {
+		opacity: 1;
+		transform: scale(1) rotate(0);
+	}
+
+	40% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes BildUebergang {
+	25% {
+		opacity: 1;
+		transform: scale(1) rotate(0);
+	}
+
+	40% {
+		opacity: 0;
+	}
+}
+
+@-o-keyframes BildUebergang {
+	25% {
+		opacity: 1;
+		transform: scale(1) rotate(0);
+	}
+
+	40% {
+		opacity: 0;
+	}
+}
+
+@keyframes BildUebergang {
+	25% {
+		opacity: 1;
+		transform: scale(1) rotate(0);
+	}
+
+	40% {
+		opacity: 0;
+	}
+}
+
+#wappen_bild_slider{
+    background-image: url('../images/logo+wappen.png'); 
+    /* background-color: aqua */;
+    z-index: 90;
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 25vh;
+    margin: auto;
+    
+
+}
+
+#aktuelles{
+    
+    padding: 4vh 3%;
+    padding-top: 8vh;
+}
+
+#aktuelles h1{
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+
+#aktuelles .Artikel{
+    margin: 0.5vw;
+    background-color: rgb(235, 235, 235);
+    padding: 0.5vw;
+    height: auto;
+}
+
+#aktuelles .Artikel .ueberschrift{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#aktuelles .Artikel .kl_wrap{
+    display: inline-block;
+    width: 100%;
+    margin-top: 1vh;
+}
+
+#aktuelles .Artikel .kl_wrap .kurz_beschreibung_div{
+    
+    float: left;
+    width: 70%;
+}
+
+#aktuelles .Artikel .kl_wrap .kurz_beschreibung_div .kurz_beschreibung{
+       font-size: 18px;
+}
+
+#aktuelles .Artikel .kl_wrap .link_div {
+    text-decoration: none;
+    vertical-align: bottom;
+    float: right;
+    width: auto;
+ }
+
+
+#aktuelles .Artikel .kl_wrap .link_div .link{
+    
+ }
+
+ #aktuelles .Artikel .dA-Wrap{
+    margin-top: 1.2vh;
+    display: inline-block;
+    width: 100%;
+    color: rgb(128, 128, 128);
+ }
+
+ #aktuelles .Artikel .dA-Wrap .datum{
+    float: right;
+    
+ }
+    
+ 
+ #aktuelles .Artikel .dA-Wrap .author{
+    
+}
+

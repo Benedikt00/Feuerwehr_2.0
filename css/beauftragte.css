@@ -1,0 +1,47 @@
+
+.beauftragter{
+	width: 100%;
+	height: 30vh;
+	overflow: hidden;
+	display: flex;
+	
+}
+
+.beauftragter .beauftragter-text{
+	height: 100%;
+	width: 65%;
+	margin: 0;
+	display: flex;
+    align-items: center;
+}
+
+.beauftragter .beauftragter-text-text{
+	width: fit-content;
+	margin: auto;
+	padding: auto;
+	text-align: center;
+}
+
+
+.beauftragter .beauftragter-img{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25vh;
+    margin-top: 2.5vh;
+	width: 35%;
+	float: right;
+}
+
+.beauftragter h1{
+	font-size: 35px;
+}
+
+
+
+
+
+
+
+
+

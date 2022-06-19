@@ -1,0 +1,91 @@
+
+
+#kommandant{
+    padding: 4vh 0;
+	display: flex;
+	width: 100%;
+    height: 40vh;
+	overflow: hidden;
+
+
+	
+}
+
+#kommandant-text{
+	width: 100%;
+
+    vertical-align: middle;
+    /*align div vertical center*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+#kommandant-text-wrapper{
+    text-align: center;
+    height: auto;
+}
+
+
+#kommandant-pic{
+	background-image: url("../images/Kommando/kommandant.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	right: 10px;
+	background-position: center;
+	background-size: cover;
+}
+
+
+#kommandantstv{
+    padding: 4vh 0;
+	display: flex;
+	width: 100%;
+    height: 40vh;
+	overflow: hidden;
+
+}
+
+#kommandantstv-text{
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#kommandantstv-text-wrapper{
+    text-align: center;
+    height: auto;
+}
+
+#kommandantstv-pic{
+	background-image:url("../images/Kommando/kommandantstv.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	left: 10px;
+	background-position: center;
+	background-size: cover;
+}
+
+section h1{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+section h2{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+section h3{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+section p{
+    font-size: 20px;
+    line-height: 30px;
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/index.css">
+   <link rel="stylesheet" href="../css/index02.css">
+   <script src="https://kit.fontawesome.com/ba9a0d5d6b.js" crossorigin="anonymous"></script>
+   <title>FF-Neumarkt</title>
+   <link rel="icon" href="../images/ff-logo.png">
+</head>
+
+<body>
+   <header>
+      <div id="header_wrapper">
+         <div id="wappen">
+
+         </div>
+         <div id="logo">
+
+         </div>
+      </div>
+   </header>
+   <nav id="navbar">
+      <label class="logo">FF-Neumarkt</label>
+      <ul>
+         <li><a class="active" href="index.html">Home</a></li>
+
+
+         <li>
+            <a href="">Die Feuerwehr <i class="fas fa-caret-down"></i></a>
+            <ul>
+               <li><a href="fuhrpark.html" class="btn">Fuhrpark</a></li>
+               <li>
+                  <a href="" class="btn">Mannschaft <i class="fas fa-caret-right"></i></a>
+                  <ul>
+                     <li><a href="kommando.html" class="btn">Kommando</a></li>
+                     <li><a href="beauftragte.html" class="btn">Beauftragte</a></li>
+                     <li><a href="mitglieder.html" class="btn">Mitglieder</a></li>
+                  </ul>
+               <li><a href="Wir_ueber_uns.html" class="btn">Wir über uns</a></li>
+         </li>
+      </ul>
+      </li>
+      <li>
+         <a href="#">Jugend <i class="fas fa-caret-down"></i>
+         </a>
+         <ul>
+            <li><a href="Jugend_Aktuelles.html" class="btn">Aktuelles</a></li>
+            <li><a href="Jugend_Die_Jugend.html" class="btn">Die Jugend</a></li>
+
+         </ul>
+      </li>
+
+      <li><a href="Buergerservice.html" class="btn">Bürgserservice</a></li>
+      <li><a href="Kontakt.html" class="btn">Kontakt</a></li>
+      </ul>
+   </nav>
+   <section>
+      <div id="BildUebergang">
+         <img src="../images/images_startseite/Bild 1.jpg" alt="img" />
+         <img src="../images/images_startseite/Bild 2.jpg" alt="img" />
+         <img src="../images/images_startseite/Bild 3.jpg" alt="img" />
+         <img src="../images/images_startseite/Bild 4.jpg" alt="img" />
+         <img src="../images/images_startseite/Bild 5.jpg" alt="img" />
+         <img src="../images/images_startseite/Bild 6.jpg" alt="img" />
+         <div id="wappen_bild_slider">
+
+         </div>
+      </div>
+      <div id="maby_pic_wache">
+      </div>
+
+      <div id="ankündigungen">
+
+      </div>
+
+      <div id="aktuelles">
+         <h1>Aktuelles:</h1>
+         <div class="Artikel">
+            <p class="ueberschrift">Jugendfeuerwehr-Leistungsbewerb in irgendwo</p>
+            <div class="kl_wrap">
+               <div class="kurz_beschreibung_div">
+                  <p class="kurz_beschreibung">Am 18.6.2022 Erzilete die Jgend am FJLB den ersten und dritten platz.
+                     </p>
+
+
+               </div>
+               <div class="link_div">
+                  <a class="link"><a href="aktuelles/vorlage.html">Hier weiterlesen..</a></p>
+               </div>
+            </div>
+            <div class="dA-Wrap">
+               <p class="datum">18.6.2022</p>
+               <p class="autor">Autor: FF-Neumarkt</p>
+            </div>
+         </div>
+         <hr>
+
+
+
+      </div>
+
+   </section>
+</body>
+<script>
+   window.onscroll = function () { myFunction() };
+
+   // Get the navbar
+   var navbar = document.getElementById("navbar");
+   var slide = document.getElementById("BildUebergang");
+   // Get the offset position of the navbar
+   var sticky = navbar.offsetTop;
+
+   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+   function myFunction() {
+      if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky")
+         slide.classList.add("slide")
+
+      } else {
+         navbar.classList.remove("sticky");
+         slide.classList.remove("slide");
+      }
+   }
+</script>
+
+</html>

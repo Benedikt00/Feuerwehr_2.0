@@ -1,0 +1,86 @@
+.title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.text_p {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.ad_wrappe {
+    padding-top: 1vh;
+    display: inline; 
+}
+
+.author {
+    width: 40%;
+}
+
+.datum {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+
+.bilder {
+    
+    width: 95%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 5vh;
+    overflow: hidden;
+
+}
+
+.bilder img {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    object-fit: cover;
+}
+
+.scDiv {
+    
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-top: calc(-35vh - 40px);
+
+}
+
+.scroll {
+    position: relative;
+    height: 40px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.233);
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    border: hidden;
+    
+}
+
+.scroll:hover{
+    background-color: rgba(255, 255, 255, 0.753);
+}
+
+#sL {
+    float: left;
+}
+
+#sR {
+    float: right;
+}

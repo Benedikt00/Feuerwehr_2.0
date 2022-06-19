@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="aktuelles.css">
+    <script src="https://kit.fontawesome.com/ba9a0d5d6b.js" crossorigin="anonymous"></script>
+    <title>FF-Neumarkt</title>
+    <link rel="icon" href="../../images/ff-logo.png">
+</head>
+
+<body>
+    <nav id="navbar">
+        <label class="logo">FF-Neumarkt</label>
+        <ul>
+            <li><a class="btn" href="../index.html">Home</a></li>
+
+
+            <li>
+                <a href="">Die Feuerwehr <i class="fas fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="../fuhrpark.html" class="btn">Fuhrpark</a></li>
+                    <li>
+                        <a href="" class="btn">Mannschaft <i class="fas fa-caret-right"></i></a>
+                        <ul>
+                            <li><a href="../kommando.html" class="btn">Kommando</a></li>
+                            <li><a href="../beauftragte.html" class="btn">Beauftragte</a></li>
+                            <li><a href="../mitglieder.html" class="btn">Mitglieder</a></li>
+                        </ul>
+                    <li><a href="../Wir_ueber_uns.html" class="btn">Wir über uns</a></li>
+            </li>
+        </ul>
+        </li>
+        <li>
+            <a href="#">Jugend <i class="fas fa-caret-down"></i>
+            </a>
+            <ul>
+                <li><a href="../Jugend_Aktuelles.html" class="btn">Aktuelles</a></li>
+                <li><a href="../Jugend_Die_Jugend.html" class="btn">Die Jugend</a></li>
+
+            </ul>
+        </li>
+
+        <li><a href="../Buergerservice.html" class="btn">Bürgserservice</a></li>
+        <li><a href="../Kontakt.html" class="btn">Kontakt</a></li>
+        </ul>
+    </nav>
+    <section>
+        <p class="title">Titel des Anlassses:</p>
+        <div class="text">
+            <p class="text_p">Durch die Grosartige Leistung der Feuerwehrjugend am Jugend-Leistungs-Bewerb in
+                St.Lorenzen bei Knittelfeld konnten die Jugendlichen den ersten Platz in Bronze und den dritten in
+                Silber errreichen.</p>
+
+            <div class="ad_wrappe">
+                <p class="author">JFM Benedikt Simbürger</p>
+                <p class="datum">18.6.2022</p>
+            </div>
+
+        </div>
+        <div class="bilder">
+            <img src="18.6.2022/Bild 1.jpg" class="bild" alt="img" />
+            <img src="18.6.2022/Bild 2.jpg" class="bild" alt="img" />
+            <img src="18.6.2022/Bild 3.jpg" class="bild" alt="img" />
+            <img src="18.6.2022/Bild 4.jpg" class="bild" alt="img" />
+
+
+            <div class="scDiv">
+                <button class="scroll" id="sL" onclick="pBild(-1)">&#10094;</button>
+                <button class="scroll" id="sR" onclick="pBild(1)">&#10095;</button>
+            </div>
+
+
+        </div>
+    </section>
+</body>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function pBild(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("bild");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+</html>
